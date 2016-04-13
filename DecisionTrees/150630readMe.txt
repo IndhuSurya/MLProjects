@@ -1,0 +1,35 @@
+Decision tree, pruning and predicting  Version 1.0 09/26/2015
+
+General Usage Notes
+-------------------
+-Please go into the DeciisionTrees/data_sets1 or data_sets2 for running the corresponding datasets as the input
+
+-Run the code using the below command in the command line
+ 
+Rscript Dtree.R training_set.csv validation_set.csv test_set.csv 
+
+-The program was coded using RStudio
+
+Program Description
+-------------------
+
+The analysis of Rpart Package by using the functions rpart, plot, text, prune and predict 
+A decision tree is built and pruning is performed using the training data.
+Testing data is used to predict the accuracy of the decision trees created. 
+
+Resources used
+--------------
+
+https://stat.ethz.ch/R-manual/R-devel/library/rpart/html/predict.rpart.html
+https://www.youtube.com/watch?v=XLNsl1Da5MA
+https://www.youtube.com/watch?v=CrFwNzdyt7I
+
+Observation
+-----------
+
+From the output, it can be observed that
+
+Pruning the tree using the minimum xerror values CP doesn't help much and hence the original decision tree and the pruned decision tree are all the same in this case.
+In this program, Rpart package from R rpogramming language is used to develop the decision tree.
+The parameters used are rpart() to build the tree, prune() to prune the tree and predict() to predict the tree using testing data set.
+Plot() and text() functions are used to develop the tree graphically and summary() is used to describe the tree structure obtained.
